@@ -1,19 +1,35 @@
-/* ================================
-   Base
-================================ */
-@use "./base/variables";
-@use "./base/font-face";
-@use "./base/reset";
+// /* ================================
+//    Base
+// ================================ */
+// @use "./base/variables";
+// @use "./base/font-face";
+// @use "./base/reset";
 
-/* ================================
-   Layout
-================================ */
-@use "./layout/container";
+// /* ================================
+//    Layout
+// ================================ */
+// @use "./layout/container";
 
-/* ================================
-   Utilities
-================================ */
-// @use "./utilities/helpers";
+// /* ================================
+//    Utilities
+// ================================ */
+// // @use "./utilities/helpers";
 
-// // リセット（node_modules の kiso.css）
-// @import "kiso.css";
+// // // リセット（node_modules の kiso.css）
+// // @import "kiso.css";
+
+@use "foundation";
+@use "global";
+
+// layoutディレクトリ内のファイルを直接インポート
+@use "layouts/**";
+
+// components と projects
+@use "components/**";
+@use "projects/**";
+
+// utilityクラス（全てのファイル）をワイルドカードで読み込み
+@use "utilities/**";
+
+// リセット（node_modules の kiso.css）
+@import "kiso.css";
