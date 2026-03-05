@@ -1,4 +1,6 @@
 // import "./styles/style.scss";
+import logo from "../../assets/logo/logo.svg";
+import thumbImage from "../../assets/images/introduction-thumb-image.jpg";
 import styles from "./Block1.module.scss";
 
 const Block1 = () => {
@@ -15,12 +17,22 @@ const Block1 = () => {
         <div className="container">
           <div className="thumb">
             <div className="image">
-              <h1>Hello</h1>
-              <img src="" alt="" />
+              <img src={thumbImage} alt="" />
             </div>
             <div>
-              <img src="" alt="" />
+              <img src={logo} alt="" />
             </div>
+          </div>
+          <div className="text">
+            <div className="block">
+              <div className="left">
+                <h3>
+                  <div className="catch">introduction of mediplus</div>
+                </h3>
+              </div>
+              <div className="right"></div>
+            </div>
+            <div className="sentence"></div>
           </div>
         </div>
       </section>
