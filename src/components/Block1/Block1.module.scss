@@ -1,4 +1,21 @@
 .introduction {
-  margin: 20px ;
-  
+  background: linear-gradient(45deg, rgba(7,112,209,1) 0%, rgba(12,176,196,1) 100%);
+  padding: 50px 0 50px 0;
 }
+
+.back {
+  max-width: 1920px;
+  margin: 0 auto 0;
+
+  p{
+    color: #fff;
+    font-family: "Crimson Text";
+    font-weight: 400;
+    line-height: 0.8;
+    opacity: 0.4;
+    letter-spacing: 10px;
+    text-align: right;
+    font-size: 90px;
+  }
+}
+
