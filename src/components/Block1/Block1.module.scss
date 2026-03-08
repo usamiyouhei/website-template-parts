@@ -3,9 +3,7 @@
 .introduction {
   background: linear-gradient(45deg, rgba(7,112,209,1) 0%, rgba(12,176,196,1) 100%);
   padding: 50px 0 50px 0;
-}
-
-.back {
+  .back {
   max-width: 1920px;
   margin: 0 auto 0;
 
@@ -20,7 +18,6 @@
     font-size: 90px;
   }
 }
-
 .container {
   .thumb {
     display: flex;
@@ -122,8 +119,200 @@
         }
       }
       .right {
+        .markWrapper {
+          ul{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            width: 600px;
+            li{
+              color: $pink-color;
+              font-weight: 500;
+              border: solid 3px $pink-color;
+              background: #fff;
+              text-align: center;
+              font-size: 17px;
+              width: 32%;
+              margin: 10px 2% 0 0;
+              &:nth-child(3n),
+              &:last-child{
+                margin: 10px 0 0 0;
+              }
+
+            }
+          }
+
+        }
 
       }
     }
+    .sentence {
+      max-width: 1920px;
+      margin: 20px auto;
+      padding: 0 5% 0 0;
+      p{
+        color: #fff;
+        line-height: 2.2;
+        letter-spacing: 2px;
+        font-size: 16px;
+        padding: 10px 0 10px 0;
+        .big {
+          font-size: 1.35em;
+        }
+        .bold {
+          font-weight: 600;
+        }
+      }
+    }
   }
+}
+}
+
+
+
+
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .introduction {
+  padding: 50px 0 50px 0;
+  .back {
+  max-width: 1920px;
+  margin: 0 auto 0;
+
+  p{
+    font-weight: 400;
+    line-height: 0.8;
+    opacity: 0.4;
+    letter-spacing: 10px;
+    text-align: right;
+    font-size: 90px;
+  }
+}
+.container {
+  .thumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1920px;
+    margin: 0 auto;
+    .image {
+      width: 55%;
+    }
+    .logo {
+      position: relative;
+      line-height: 0;
+      width: 35%;
+      margin: 0 0 0 -100px;
+      padding: 80px 55px 80px 55px;
+
+      &::before{
+        content: "";
+        position: absolute;
+        z-index: 2;
+        opacity: 0.9;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-width: 4px;
+        border-style: solid;
+        border-image-slice: 1;
+        width: calc(100% - 8px);
+        height: calc(100% - 8px);
+      }
+    }
+  }
+  .text {
+    margin: -55px 0 0 0;
+    .block {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 1920px;
+      margin: 0 auto 0;
+      padding: 0;
+
+      .left {
+        position: relative;
+        h3 {
+          position: absolute;
+          top: -40px;
+          left: 0;
+          white-space: nowrap;
+
+          .catch {
+            color: $pink-color;
+            font-family: "Crimson Text";
+            font-weight: 400;
+            line-height: 1.1;
+            letter-spacing: 4px;
+            font-size: 30px;
+          }
+        }
+        h2 {
+          font-weight: 600;
+          margin: 0 50px 0 0;
+          .line{
+            line-height: 1.2;
+            margin: 10px 0 0 0;
+            .catch{
+              display: inline-block;
+              
+              font-size: 42px;
+              padding: 5px 40px 10px 40px;
+            }
+            &:nth-child(1) {
+              margin: 0 ;
+            }
+          }
+        }
+      }
+      .right {
+        .markWrapper {
+          ul{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            width: 600px;
+            li{
+              color: $pink-color;
+              font-weight: 500;
+              border: solid 3px $pink-color;
+              text-align: center;
+              font-size: 17px;
+              width: 32%;
+              margin: 10px 2% 0 0;
+              &:nth-child(3n),
+              &:last-child{
+                margin: 10px 0 0 0;
+              }
+
+            }
+          }
+
+        }
+
+      }
+    }
+    .sentence {
+      max-width: 1920px;
+      margin: 20px auto;
+      padding: 0 5% 0 0;
+      p{
+        line-height: 2.2;
+        letter-spacing: 2px;
+        font-size: 16px;
+        padding: 10px 0 10px 0;
+        .big {
+          font-size: 1.35em;
+        }
+        .bold {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+}
 }

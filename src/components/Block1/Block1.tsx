@@ -39,7 +39,7 @@ const Block1 = () => {
                 </h2>
               </div>
               <div className={styles.right}>
-                <div className={styles.wrapper}>
+                <div className={styles.markWrapper}>
                   <ul>
                     <li>ダイエットGLP-1</li>
                     <li>美容内服液</li>
@@ -51,17 +51,20 @@ const Block1 = () => {
                 </div>
               </div>
             </div>
-            <div className="sentence">
+            <div className={styles.sentence}>
               <p>
                 株式会社Supercellが運営する美容医療オンライン診療プラットフォームです。お客様に「もっと手軽に美しくなる」ための美容医療メニューの診療でき、あらゆる処方品でお客様のお悩みを解決いたします。
               </p>
               <p>
                 オンライン診療をご希望されているお客様は、MEDIPLUS提携医師の指導・アドバイスのもと処方が決定いたしましたら、
-                <span className="big bold">自宅にお薬をお届け</span>します。
+                <span className={`${styles.big} ${styles.bold}`}>
+                  自宅にお薬をお届け
+                </span>
+                します。
               </p>
               <p>
                 メディプラス独自の厳選した美容医療、お薬、処方品をお手軽に利用することができ、
-                <span className="big bold">
+                <span className={`${styles.big} ${styles.bold}`}>
                   一度利用した美容意識の高いお客様から特にご好評
                 </span>
                 頂いています。
