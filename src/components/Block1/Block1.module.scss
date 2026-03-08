@@ -1,3 +1,5 @@
+@use "../../styles/base/variables" as *;
+
 .introduction {
   background: linear-gradient(45deg, rgba(7,112,209,1) 0%, rgba(12,176,196,1) 100%);
   padding: 50px 0 50px 0;
@@ -19,3 +21,109 @@
   }
 }
 
+.container {
+  .thumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1920px;
+    margin: 0 auto;
+    .image {
+      width: 55%;
+      img {
+        box-shadow: $box-shadow-plane;
+      }
+    }
+    .logo {
+      position: relative;
+      line-height: 0;
+      box-shadow: $box-shadow-plane;
+      width: 35%;
+      background: #fff;
+      margin: 0 0 0 -100px;
+      padding: 80px 55px 80px 55px;
+
+      &::before{
+        content: "";
+        position: absolute;
+        z-index: 2;
+        opacity: 0.9;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-width: 4px;
+        border-style: solid;
+        border-image: linear-gradient(
+          90deg,
+            #36aff4 0%,
+            #a897d5 45%,
+            #ff58a7 70%,
+            #a897d5 85%,
+            #36aff4 100%
+            );
+        border-image-slice: 1;
+        width: calc(100% - 8px);
+        height: calc(100% - 8px);
+      }
+    }
+  }
+  .text {
+    margin: -55px 0 0 0;
+    .block {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 1920px;
+      margin: 0 auto 0;
+      padding: 0;
+
+      .left {
+        position: relative;
+        h3 {
+          position: absolute;
+          top: -40px;
+          left: 0;
+          white-space: nowrap;
+
+          .catch {
+            color: $pink-color;
+            font-family: "Crimson Text";
+            font-weight: 400;
+            line-height: 1.1;
+            letter-spacing: 4px;
+            font-size: 30px;
+          }
+        }
+        h2 {
+          font-weight: 600;
+          margin: 0 50px 0 0;
+          .line{
+            line-height: 1.2;
+            margin: 10px 0 0 0;
+            .catch{
+              display: inline-block;
+              color: #fff;
+              box-shadow:
+              $box-shadow-plane;
+              background: 
+              linear-gradient(
+                30deg,
+                rgba(236,78,127,1) 
+                0%,
+                rgba(248,107, 151,1) 100%
+              );
+              font-size: 42px;
+              padding: 5px 40px 10px 40px;
+            }
+            &:nth-child(1) {
+              margin: 0 ;
+            }
+          }
+        }
+      }
+      .right {
+
+      }
+    }
+  }
+}

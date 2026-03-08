@@ -14,32 +14,32 @@ const Block1 = () => {
             Platform
           </p>
         </div>
-        <div className="container">
-          <div className="thumb">
-            <div className="image">
+        <div className={styles.container}>
+          <div className={styles.thumb}>
+            <div className={styles.image}>
               <img src={thumbImage} alt="" />
             </div>
-            <div>
+            <div className={styles.logo}>
               <img src={logo} alt="" />
             </div>
           </div>
-          <div className="text">
-            <div className="block">
-              <div className="left">
+          <div className={styles.text}>
+            <div className={styles.block}>
+              <div className={styles.left}>
                 <h3>
-                  <div className="catch">introduction of mediplus</div>
+                  <div className={styles.catch}>introduction of mediplus</div>
                 </h3>
                 <h2>
-                  <div className="line">
-                    <div className="catch">美容医療専門</div>
+                  <div className={styles.line}>
+                    <div className={styles.catch}>美容医療専門</div>
                   </div>
-                  <div className="line">
-                    <div className="catch">オンライン診療</div>
+                  <div className={styles.line}>
+                    <div className={styles.catch}>オンライン診療</div>
                   </div>
                 </h2>
               </div>
-              <div className="right">
-                <div className="mark_wrapper">
+              <div className={styles.right}>
+                <div className={styles.wrapper}>
                   <ul>
                     <li>ダイエットGLP-1</li>
                     <li>美容内服液</li>
