@@ -177,7 +177,7 @@
   .introduction {
   padding: 50px 0 50px 0;
   .back {
-  max-width: 1920px;
+  max-width: 100%;
   margin: 0 auto 0;
 
   p{
@@ -186,23 +186,18 @@
     opacity: 0.4;
     letter-spacing: 10px;
     text-align: right;
-    font-size: 90px;
+    font-size: 80px;
   }
 }
 .container {
   .thumb {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 1920px;
+    max-width: 100%;
     margin: 0 auto;
     .image {
-      width: 55%;
+      width: 60%;
     }
     .logo {
-      position: relative;
-      line-height: 0;
-      width: 35%;
+      width: 40%;
       margin: 0 0 0 -100px;
       padding: 80px 55px 80px 55px;
 
@@ -225,9 +220,6 @@
   .text {
     margin: -55px 0 0 0;
     .block {
-      display: flex;
-      align-items: center;
-      justify-content: center;
       max-width: 1920px;
       margin: 0 auto 0;
       padding: 0;
@@ -241,9 +233,6 @@
           white-space: nowrap;
 
           .catch {
-            color: $pink-color;
-            font-family: "Crimson Text";
-            font-weight: 400;
             line-height: 1.1;
             letter-spacing: 4px;
             font-size: 30px;
@@ -256,10 +245,8 @@
             line-height: 1.2;
             margin: 10px 0 0 0;
             .catch{
-              display: inline-block;
-              
-              font-size: 42px;
-              padding: 5px 40px 10px 40px;
+              font-size: 38px;
+              padding: 5px 40px 10px 30px;
             }
             &:nth-child(1) {
               margin: 0 ;
@@ -270,39 +257,34 @@
       .right {
         .markWrapper {
           ul{
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            flex-wrap: wrap;
-            width: 600px;
+            width: 400px;
             li{
-              color: $pink-color;
-              font-weight: 500;
-              border: solid 3px $pink-color;
-              text-align: center;
-              font-size: 17px;
-              width: 32%;
-              margin: 10px 2% 0 0;
+              font-size: 16px;
+              width: 48.5%;
+              margin: 10px 3% 0 0;
               &:nth-child(3n),
               &:last-child{
+                margin: 10px 3% 0 0;
+              }
+              &:nth-child(2n) {
                 margin: 10px 0 0 0;
               }
-
+              &:last-child{
+                margin: 10px 0% 0 0;
+              }
             }
           }
-
         }
-
       }
     }
     .sentence {
-      max-width: 1920px;
+      max-width: 100%;
       margin: 20px auto;
       padding: 0 5% 0 0;
       p{
         line-height: 2.2;
         letter-spacing: 2px;
-        font-size: 16px;
+        font-size: 15px;
         padding: 10px 0 10px 0;
         .big {
           font-size: 1.35em;
